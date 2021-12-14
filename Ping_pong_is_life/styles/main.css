@@ -1,0 +1,239 @@
+
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital@1&display=swap');
+colors{
+    --primary-color: #4fa36f;
+    --secondary-color: #676fe0;
+    --accent1-color: #4ecdc4;
+    --accent2-color: #F7fff7;
+}
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.header{
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+#logo{
+    width: 100%;
+    border-radius: 25%;
+    padding-left: 5px;
+}
+body {
+    margin: 0px;
+}
+
+#navigation{
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px auto;
+    padding-top: 20px;
+
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    color: #676fe0;
+    text-shadow: 1px 1px black
+    
+}
+a:hover{
+    text-decoration: underline;
+    color: #4ecdc4;
+}
+#hero_box{
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+    background-color: #F7fff7
+      
+}
+#hero_image{
+    width: 100%;
+    border: 0px;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#hero_message {
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 1/4;
+    color: #4ecdc4;
+    text-shadow: 1px 1px;
+    text-decoration-color: white;
+    margin-top: 100px;
+    font-size: 45px;
+} 
+  
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    
+    text-align: center;
+    padding-top: 70px;
+    background-color: #4fa36f;
+    margin: 0px;
+} 
+#imageofme {
+    grid-column: 2/6;
+    grid-row: 3/6;
+    width: 100%;
+    border: 5px solid #676fe0;
+    border-radius: 10%;
+    margin: 30px;
+
+}
+#about_me_text_box {
+    grid-column : 7/10;
+    grid-row: 4/5;
+    border: 5px solid #676fe0;
+    background-color: #4ecdc4;
+    padding: 5px;
+    border-radius: 10px;
+}
+#old {
+    grid-column: 3/9;
+    grid-row: 7/9;
+    border: 5px solid #676fe0;
+    border-radius: 10%;
+    width: 100%;
+    margin: 30px;
+    
+    
+}
+#history{
+    grid-column: 3/9;
+    grid-row: 9/12;
+    border: 5px solid #676fe0;
+    background-color: #4ecdc4;
+    border-radius: 10px;
+    margin: 30px;   
+}
+/* Rules.html */
+
+.page2-grid {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(3,1fr);
+    text-align: center;
+    padding-top: 70px;
+    background-color: #4fa36f;
+    margin: 0px;
+}
+#paddle-on-table {
+    grid-column: 2/5;
+    width: 100%;
+    grid-row: 1;
+    border: 5px solid;
+}
+
+#rules {
+    grid-column: 6/9;
+    grid-row: 1/3;
+    text-align: left;
+    margin: 5px;
+    background-color: #676fe0;
+}
+#title-page-2{
+    text-align: center;
+}
+#rio-table-tennis {
+    grid-column: 2/5;
+    grid-row: 2;
+    width: 100%;
+    border: 5px solid;
+}
+
+
+/* Footer */
+footer{
+    background-color: #4ecdc4;
+    color: black;
+    text-decoration: underline;
+    padding: 25px 50px;
+    
+    font-size: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+
+/* Next and previous buttons */
+/* .next-previous {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+  
+a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+.next {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+.round {
+    border-radius: 50%;
+  } */
+
+
+  /*media querie*/
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
